@@ -1,2 +1,16 @@
-# inquirer-homework
-README.md file generator using a CLI created with inquirer. Generates elegant README.md file's for any project, just follow the prompts.
+# readme generator
+generates readme fiels
+## Table of Contents
+[readme generator](readme generator)
+[Usage](Usage)
+[Contributing](Contributing)
+[Tests](Tests)
+[License](License)
+## Installation
+node inquirer node fs
+## Usage 
+follow the prompts
+## Contributingsend them pull requests
+## Tests
+
+## License
