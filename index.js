@@ -74,39 +74,41 @@ const generateMD = (title, descrip, installation, license, usage, contributing) 
 
 const writeMD = (title, descrip, installation, license, usage, contributing) => {
     const MDtemplate =
-        "# " + title +
+        "# " + title + "(#" + title + ")" +
         "\n" +
         descrip +
         "\n" +
         "## Table of Contents" +
         "\n" +
-        "[" + title + "]" + "" + "(" + title + ")" +
+        "[" + title + "]" + "" + "(#" + title + ")" +
         "\n" +
-        "[Usage](Usage)" +
+        "[Installation](#Installation)" +
         "\n" +
-        "[Contributing](Contributing)" +
+        "[Usage](#Usage)" +
         "\n" +
-        "[Tests](Tests)" +
+        "[Contributing](#Contributing)" +
         "\n" +
-        "[License](License)" +
+        "[Tests](#Tests)" +
         "\n" +
-        "## Installation" +
+        "[License](#License)" +
+        "\n" +
+        "## Installation(#Installation)" +
         "\n" +
         installation +
         "\n" +
-        "## Usage " +
+        "## Usage(#Usage)" +
         "\n" +
         usage +
         "\n" +
-        "## Contributing" +
+        "## Contributing(#Contributing)" +
         "\n" +
         contributing +
         "\n" +
-        "## Tests" +
+        "## Tests(#Tests)" +
         "\n" +
         "" +
         "\n" +
-        "## License" +
+        "## License(#License)" +
         "\n" +
         license
 
