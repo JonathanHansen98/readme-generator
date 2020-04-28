@@ -12,6 +12,8 @@
 * [Contributing](#Contributing)
     
 * [Tests](#Tests)
+
+* [Questions](#Questions)
     
 * [License](#License)
 <hr>
@@ -34,9 +36,11 @@
 ## Questions
  Have questions? Contact Me: 
 
- [![](https://img.shields.io/static/v1?label=Contact&message=Github&color=blue)](#https://github.com/JonathanHansen98) 
+ #### JonathanHansen98 
 
-Email: No email provided 
+ <a href="https://github.com/JonathanHansen98"><img src="https://img.shields.io/static/v1?label=Contact&message=Github&color=lightgrey" /></a> 
+
+<a href="kriah0872@gmail.com"><img src="https://img.shields.io/badge/Contact-Email%20Me!-lightgrey" /></a> 
  
 <img src="https://avatars3.githubusercontent.com/u/58758929?v=4" width="200" height="200" />
 <hr>
