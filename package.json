@@ -1,14 +1,24 @@
 {
   "name": "inquirer-homework",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Table of Contents",
   "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanHansen98/inquirer-homework.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "inquirer": "^7.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/JonathanHansen98/inquirer-homework/issues"
+  },
+  "homepage": "https://github.com/JonathanHansen98/inquirer-homework#readme"
 }
