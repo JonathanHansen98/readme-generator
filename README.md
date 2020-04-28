@@ -38,9 +38,9 @@
 
  #### JonathanHansen98 
 
- <a href="https://github.com/JonathanHansen98"><img src="https://img.shields.io/static/v1?label=Contact&message=Github&color=lightgrey" /></a> 
-
-<a href="kriah0872@gmail.com"><img src="https://img.shields.io/badge/Contact-Email%20Me!-lightgrey" /></a> 
+ <a href="https://github.com/JonathanHansen98"><img src="https://img.shields.io/static/v1?label=Contact&message=Github&color=lightgrey" /></a>
+ 
+ No email provided 
  
 <img src="https://avatars3.githubusercontent.com/u/58758929?v=4" width="200" height="200" />
 <hr>

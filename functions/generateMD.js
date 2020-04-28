@@ -9,12 +9,12 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
         .get(`https://api.github.com/users/${user}`)
         .then(res => {
             const { data } = res
-            let email = "kriah0872@gmail.com"
+            let email = data.email
             // data.email
             const picture = data.avatar_url
             const login = data.login
             if (email === null) {
-                email = "No email provided"
+                email = "\n No email provided"
             }
             else {
                 email = `<a href="${email}"><img src="https://img.shields.io/badge/Contact-Email%20Me!-lightgrey" /></a>`
@@ -79,8 +79,8 @@ ${contributing}
 ## Questions
  Have questions? Contact Me: \n
  #### ${login} \n
- <a href="https://github.com/${login}"><img src="https://img.shields.io/static/v1?label=Contact&message=Github&color=lightgrey" /></a> \n
-${email} \n 
+ <a href="https://github.com/${login}"><img src="https://img.shields.io/static/v1?label=Contact&message=Github&color=lightgrey" /></a>
+ ${email} \n 
 <img src="${picture}" width="200" height="200" />
 <hr>
 
