@@ -6,13 +6,15 @@ const writeFileAsync = util.promisify(fs.writeFile)
 
 const generateMD = (user, title, descrip, installation, license, usage, contributing) => {
     axios
-        .get(`https://api.github.com/users/${user}`)
+        .get(`https://api.github.com/users/${user}/events/public`)
         .then(res => {
             const { data } = res
-            let email = data.email
-            // data.email
-            const picture = data.avatar_url
-            const login = data.login
+            let pushEvents = data.filter((obj) => {
+                return obj.type = 'PushEvent'
+            })
+            let email = pushEvents[0].payload.commits[0].author.email
+            console.log(pushEvents[0])
+            const {login, avatar_url:picture } = pushEvents[0].actor
             if (email === null) {
                 email = "\n No email provided"
             }
@@ -35,7 +37,7 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
             console.log("Your ReadMe.md has been Generated!")
         })
         .catch(err => {
-          throw `${err} \n Error in generateMD()`
+          throw `Error in generateMD()`
         })
 }
 
