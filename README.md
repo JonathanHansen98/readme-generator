@@ -1,4 +1,4 @@
-# inquirer-homework
+# readme-generator
 
 A CLI that uses inquirer to prompt the users for information to generate a custom README.md file. Github email, username, and avatar picture are populated in the 'Questions' section of the readme using the 
 <hr>
