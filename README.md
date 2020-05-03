@@ -11,8 +11,6 @@ A CLI that uses inquirer to prompt the users for information to generate a custo
     
 * [Contributing](#Contributing)
     
-* [Tests](#Tests)
-
 * [Questions](#Questions)
     
 * [License](#License)
@@ -23,14 +21,21 @@ Node.js, inquirer, axios
 <hr>
 
 ## Usage
-Once node_modules are installed, run node index.js in the command line to start the program. Answer the prompts with information pertaining to your project. Once finished, your README.MD file will be generated in the same directory as the index.js file.
+Download or clone this repository on to your machine. cd into the directroy for this repository and install the node packages required to run the program
+```bash
+cd readme-generator/
+
+npm i -g
+```
+Once node_modules are installed, run node index.js in the command line to start the program.
+```bash
+node index.js
+```
+Answer the prompts with information pertaining to your project. Once finished, your generated-README.MD file will be in the same directory as the index.js file.
 <hr>
 
 ## Contributing 
 Fork and clone this repo, create a descriptive branch, make your changes. Push the branch to your fork, and create a pull request. Contribution is highly welcomed.
-<hr>
-
-## Tests
 <hr>
 
 ## Questions
