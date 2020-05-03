@@ -6,13 +6,13 @@ const {generateMD} = importgenerateMD
 
 inquirer.prompt(questions)
 .then(answers => {
-    let { user, title, descrip, installation, license, usage, contributing } = answers
+    let { user, title, descrip, installation, license, usage, contributing, testing } = answers
     if (license === 'N/A') {
         license = ''
-        generateMD(user, title, descrip, installation, license, usage, contributing)
+        generateMD(user, title, descrip, installation, license, usage, contributing, testing)
     }
     else {
-        generateMD(user, title, descrip, installation, license, usage, contributing)
+        generateMD(user, title, descrip, installation, license, usage, contributing, testing)
 
     }
 })

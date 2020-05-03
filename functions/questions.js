@@ -35,6 +35,11 @@ const questions = [
         name: "contributing",
         message: "Contributing: Contribution guidlines. Let others know if you are open to contribution, pull requests, etc..."
     },
+    {
+        type: "input",
+        name: "testing",
+        message: "Testing: Let other's know what scripts they can run to test your program."
+    }
 ]
 
 module.exports = {

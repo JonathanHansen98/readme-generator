@@ -4,7 +4,7 @@ const axios = require("axios")
 
 const writeFileAsync = util.promisify(fs.writeFile)
 
-const generateMD = (user, title, descrip, installation, license, usage, contributing) => {
+const generateMD = (user, title, descrip, installation, license, usage, contributing, testing) => {
     axios
         .get(`https://api.github.com/users/${user}/events/public`)
         .then(res => {
@@ -13,7 +13,6 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
                 return obj.type = 'PushEvent'
             })
             let email = pushEvents[0].payload.commits[0].author.email
-            console.log(pushEvents[0])
             const {login, avatar_url:picture } = pushEvents[0].actor
             if (email === null) {
                 email = "\n No email provided"
@@ -30,7 +29,7 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
         })
         .then((githubInfo) => {
             const { email, picture, login } = githubInfo
-            let readMe = writeMD(title, descrip, installation, license, usage, contributing, email, picture, login)
+            let readMe = writeMD(user, title, descrip, installation, license, usage, contributing, testing, email, picture, login)
             return writeFileAsync("generated-README.md", readMe)
         })
         .then(() => {
@@ -41,7 +40,7 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
         })
 }
 
-const writeMD = (title, descrip, installation, license, usage, contributing, email, picture, login) => {
+const writeMD = (user, title, descrip, installation, license, usage, contributing, testing, email, picture, login) => {
     const MDtemplate =
         `# ${title}
 
@@ -76,6 +75,7 @@ ${contributing}
 <hr>
 
 ## Tests
+${testing}
 <hr>
 
 ## Questions
