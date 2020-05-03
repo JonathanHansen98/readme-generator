@@ -17,5 +17,5 @@ inquirer.prompt(questions)
     }
 })
 .catch(err => {
-    throw `Error in inquirer.prompt()`
+     console.log(`Error in inquirer.prompt(): ${err}`)
 })

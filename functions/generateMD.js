@@ -19,7 +19,7 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
                 email = "\n No email provided"
             }
             else {
-                email = `<a href="${email}"><img src="https://img.shields.io/badge/Contact-Email%20Me!-lightgrey" /></a>`
+                email = `<a href="mailto:${email}"><img src="https://img.shields.io/badge/Contact-Email%20Me!-lightgrey" /></a>`
             }
             const githubInfo = {
                 email: email,
@@ -31,13 +31,13 @@ const generateMD = (user, title, descrip, installation, license, usage, contribu
         .then((githubInfo) => {
             const { email, picture, login } = githubInfo
             let readMe = writeMD(title, descrip, installation, license, usage, contributing, email, picture, login)
-            return writeFileAsync("README.md", readMe)
+            return writeFileAsync("generated-README.md", readMe)
         })
         .then(() => {
-            console.log("Your ReadMe.md has been Generated!")
+             return console.log("Your ReadMe.md has been Generated!")
         })
         .catch(err => {
-          throw `Error in generateMD()`
+             console.log(`Error in generateMD(): ${err}`)
         })
 }
 
