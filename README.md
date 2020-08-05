@@ -30,7 +30,7 @@ Once node_modules are installed, run node index.js in the command line to start 
 ```bash
 node index.js
 ```
-Answer the prompts with information pertaining to your project. Once finished, your generated-README.MD file will be in the same directory as the index.js file.
+Answer the prompts with information pertaining to your project. Once finished, your generated-README.MD file will be in the same directory as the index.js file. 
 <hr>
 
 ## Contributing 
