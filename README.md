@@ -12,20 +12,19 @@ A CLI that uses inquirer to prompt the users for information to generate a custo
 * [Contributing](#Contributing)
     
 * [Questions](#Questions)
-    
-* [License](#License)
+
 <hr>
 
 ## Installation
-Node.js, inquirer, axios
-<hr>
-
-## Usage
 Download or clone this repository on to your machine. cd into the directroy for this repository and install the node packages required to run the program
 ```bash
 cd readme-generator/
-
 npm i -g
+```
+<hr>
+
+## Usage
+
 ```
 Once node_modules are installed, run node index.js in the command line to start the program.
 ```bash
@@ -48,6 +47,3 @@ Fork and clone this repo, create a descriptive branch, make your changes. Push t
  
 <img src="https://avatars.githubusercontent.com/u/58758929?" width="200" height="200" />
 <hr>
-
-
-## License
